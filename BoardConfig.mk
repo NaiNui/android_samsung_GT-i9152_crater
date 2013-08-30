@@ -26,7 +26,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 4404019200
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_i9082_defconfig
+TARGET_KERNEL_CONFIG := mega_defconfig
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -34,8 +34,8 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/i9082/bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := device/samsung/i9082/libbt_vndcfg.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/i9152/bluetooth
+BOARD_BLUEDROID_VENDOR_CONF := device/samsung/i9152/libbt_vndcfg.txt
 
 # Connectivity - Wi-Fi
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
@@ -64,7 +64,7 @@ BOARD_USES_SKTEXTBOX := true
 
 # Hardware rendering
 USE_OPENGL_RENDERER := true
-BOARD_EGL_CFG := device/samsung/i9082/egl.cfg
+BOARD_EGL_CFG := device/samsung/i9152/egl.cfg
 BOARD_EGL_NEEDS_LEGACY_FB := true
 COMMON_GLOBAL_CFLAGS += -DMR0_CAMERA_BLOB
 
@@ -76,4 +76,4 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/samsung/i9082/ril/
+BOARD_RIL_CLASS := ../../../device/samsung/i9152/ril/
